@@ -18,6 +18,13 @@ public class User {
     @ElementCollection(targetClass = Node.class, fetch = FetchType.EAGER)
     private List<Node> nodes;
 
+    public User() {
+    }
+
+    public User(String name) {
+        this.name = name;
+    }
+
     public long getId() {
         return id;
     }

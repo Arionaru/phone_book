@@ -11,4 +11,5 @@ public interface NodeRepo extends JpaRepository<Node,Long> {
     Node findByNumber(String number);
 
     List<Node> findByUser(User user);
+
 }

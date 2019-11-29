@@ -26,7 +26,7 @@ public class UserService {
     }
 
     public List<User> findByNameContains(String name) {
-        return userRepo.findByNameContains(name);
+        return userRepo.findByNameContainsIgnoreCase(name);
     }
 
     public void delete(User user) {

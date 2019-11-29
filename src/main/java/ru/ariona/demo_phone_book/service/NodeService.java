@@ -29,4 +29,8 @@ public class NodeService {
     public void delete(Node node) {
         nodeRepo.delete(node);
     }
+
+    public void deleteAll(Iterable<? extends Node> iterable) {
+        nodeRepo.deleteAll(iterable);
+    }
 }

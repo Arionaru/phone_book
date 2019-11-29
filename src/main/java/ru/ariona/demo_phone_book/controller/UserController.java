@@ -46,6 +46,8 @@ public class UserController {
 
     @DeleteMapping("/{id}")
     public void delete(@PathVariable("id") User user) {
+        List<Node> nodes = nodeService.findByUser(user);
+        nodeService.deleteAll(nodes);
         userService.delete(user);
     }
 

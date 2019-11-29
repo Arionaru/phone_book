@@ -18,6 +18,15 @@ public class Node {
 
     private String number;
 
+    public Node() {
+    }
+
+    public Node(User user, String name, String number) {
+        this.user = user;
+        this.name = name;
+        this.number = number;
+    }
+
     public long getId() {
         return id;
     }
@@ -40,5 +49,9 @@ public class Node {
 
     public void setNumber(String number) {
         this.number = number;
+    }
+
+    public User getUser() {
+        return user;
     }
 }
